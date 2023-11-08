@@ -46,7 +46,27 @@ nav > h1 {
     
     background-image: url("img/header.jpg");
     background-size: cover;
+    position: relative;
 }
+
+.welcome-image {
+  height: 200px;
+  position: absolute;
+  bottom: -100px;
+  left: 10%;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 @media (max-width: 800px) {
   .header {
@@ -60,7 +80,8 @@ nav > h1 {
     align-items: center;
     justify-content: center;
     padding: 0 4%;
-    gap: 75px;
+    gap: 50px;
+    background-color: #f3f3f3;
 }
 
 
@@ -84,19 +105,37 @@ nav > h1 {
     align-items: center; /* Vertical center alignment of items */
     width: 350px;
   }
-.topic-header {
+.medium-header {
   font-family: "calluna", serif;
   font-weight: 900;
   text-align: center;
   margin-bottom: .4em;
-}
+  font-size: 1.75em;
   
+}
+
+.large-header {
+  font-family: "calluna", serif;
+  font-weight: 900;
+  text-align: center;
+  
+  font-size: 2.5em;
+  
+}
+
+.topic-about {
+  text-align: center;
+  font-family: "work-sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.125em;
+}
+
   .topic-body {
 
     text-align: center;
     font-family: "work-sans", sans-serif;
     font-weight: 300;
-    font-size: 1.125em;
+    font-size: .875em;
     line-height: 1.5;
   }
   
@@ -111,7 +150,6 @@ nav > h1 {
     height: auto;
   }
 .about {
-  background-color: #f3f3f3;
   padding: 0 30%;
   display: flex;
   flex-direction: column;
@@ -124,10 +162,6 @@ nav > h1 {
   display: block;
   margin: 0 auto;
   margin-bottom: .8em;
-}
-
-.about > h2 {
-  margin-bottom: .7em;
 }
 
 .about > p {
