@@ -200,10 +200,10 @@ nav > h1 {
     font-size: 0.875em;
   }
 
-  footer > span:nth-of-type(1) {
+  /* footer > span:nth-of-type(1) {
     font-style: italic;
     opacity: .3;
-  }
+  } */
 
   .cta {
     background-color: #000000;
@@ -221,8 +221,8 @@ nav > h1 {
 
   .footer-links {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    gap: 12px;
     text-decoration: none;
     list-style: none;
     
